@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de Switch</title>
+</head>
+<body>
+    <h1>Resultado del switch</h1>
+
+    <?php
+    $i = 2;
+
+    switch ($i) {
+        case 0:
+            echo "i es igual a 0";
+            break;
+        case 1:
+            echo "i es igual a 1";
+            break;
+        case 2:
+            echo "i es igual a 2";
+            break;
+        default:
+            echo "Valor no reconocido";
+    }
+    ?>
+</body>
+</html>

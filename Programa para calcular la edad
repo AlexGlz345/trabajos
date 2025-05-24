@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Edad</title>
+</head>
+<body>
+    <h1>Calculadora de Edad</h1>
+
+    <form method="post">
+        <label for="fecha_nacimiento">Introduce tu fecha de nacimiento:</label>
+        <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" required>
+        <input type="submit" value="Calcular Edad">
+    </form>
+
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["fecha_nacimiento"])) {
+        $fecha_nacimiento = new DateTime($_POST["fecha_nacimiento"]);
+        $hoy = new DateTime();
+        $edad = $hoy->diff($fecha_nacimiento)->y;
+
+        echo "<h2>Tienes $edad años.</h2>";
+    }
+    ?>
+</body>
+</html>
