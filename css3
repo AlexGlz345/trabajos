@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Quehaceres</title>
+  <style>
+    /* Selector de etiqueta */
+    ul {
+      font-family: Arial, sans-serif;
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      padding: 8px;
+      margin-bottom: 5px;
+      font-size: 16px;
+    }
+
+    /* Selectores por clase */
+    .hecho {
+      color: green;
+      font-weight: bold;
+    }
+
+    .pendiente {
+      color: red;
+      font-style: italic;
+    }
+
+    /* Ejemplo de selector por ID */
+    #titulo {
+      font-size: 20px;
+      text-decoration: underline;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="titulo">Lista CSS3</h1>
+
+  <ul>
+    <li class="hecho">1. Hacer la cama</li>
+    <li class="pendiente">2. Lavar los platos</li>
+    <li class="hecho">3. Sacar la basura</li>
+    <li class="pendiente">4. Barrer la casa</li>
+    <li class="hecho">5. Alimentar al perro</li>
+    <li class="pendiente">6. Hacer tarea</li>
+    <li class="hecho">7. Limpiar el cuarto</li>
+    <li class="pendiente">8. Lavar la ropa</li>
+    <li class="hecho">9. Ordenar el escritorio</li>
+    <li class="pendiente">10. Hacer las compras</li>
+    <li class="hecho">11. Darle de comer a los gatos</li>
+    <li class="pendiente">12. Limpiar ventanas</li>
+    <li class="hecho">13. Hacer de comer</li>
+    <li class="pendiente">14. Aspirar la alfombra</li>
+    <li class="hecho">15. Ordenar habitacion</li>
+    <li class="pendiente">16. Visitar ala abuela</li>
+    <li class="hecho">17. Lavar el carro</li>
+    <li class="pendiente">18. limpiar el patio</li>
+    <li class="hecho">19. Limpiar el arenero</li>
+    <li class="pendiente">20. ayudar a mi madre</li>
+  </ul>
+
+</body>
+</html>
