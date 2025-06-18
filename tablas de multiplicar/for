@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tablas de Multiplicar con Ciclos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    form {
+      margin-bottom: 30px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    input[type="number"] {
+      width: 60px;
+      padding: 5px;
+    }
+
+    button {
+      padding: 5px 10px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    .resultado {
+      margin-top: 10px;
+      background-color: #f7f7f7;
+      padding: 10px;
+      border-radius: 5px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Generador de Tablas de Multiplicar</h1>
+
+  <!-- Formulario con ciclo FOR -->
+  <form onsubmit="generarConFor(event)">
+    <h2>Tabla con FOR</h2>
+    <label>Ingrese número: </label>
+    <input type="number" id="numeroFor" required>
+    <button type="submit">Generar</button>
+    <div class="resultado" id="resultadoFor"></div>
+  </form>
+
+  <!-- Formulario con ciclo WHILE -->
+  <form onsubmit="generarConWhile(event)">
+    <h2>Tabla con WHILE</h2>
+    <label>Ingrese número: </label>
+    <input type="number" id="numeroWhile" required>
+    <button type="submit">Generar</button>
+    <div class="resultado" id="resultadoWhile"></div>
+  </form>
+
+  <!-- Formulario con ciclo DO WHILE -->
+  <form onsubmit="generarConDoWhile(event)">
+    <h2>Tabla con DO...WHILE</h2>
+    <label>Ingrese número: </label>
+    <input type="number" id="numeroDoWhile" required>
+    <button type="submit">Generar</button>
+    <div class="resultado" id="resultadoDoWhile"></div>
+  </form>
+
+  <script>
+    function generarConFor(e) {
+      e.preventDefault();
+      const numero = parseInt(document.getElementById("numeroFor").value);
+      let resultado = "";
+      for (let i = 1; i <= 10; i++) {
+        resultado += `${numero} x ${i} = ${numero * i}<br>`;
+      }
+      document.getElementById("resultadoFor").innerHTML = resultado;
+    }
+
+    function generarConWhile(e) {
+      e.preventDefault();
+      const numero = parseInt(document.getElementById("numeroWhile").value);
+      let resultado = "";
+      let i = 1;
+      while (i <= 10) {
+        resultado += `${numero} x ${i} = ${numero * i}<br>`;
+        i++;
+      }
+      document.getElementById("resultadoWhile").innerHTML = resultado;
+    }
+
+    function generarConDoWhile(e) {
+      e.preventDefault();
+      const numero = parseInt(document.getElementById("numeroDoWhile").value);
+      let resultado = "";
+      let i = 1;
+      do {
+        resultado += `${numero} x ${i} = ${numero * i}<br>`;
+        i++;
+      } while (i <= 10);
+      document.getElementById("resultadoDoWhile").innerHTML = resultado;
+    }
+  </script>
+
+</body>
+</html>
