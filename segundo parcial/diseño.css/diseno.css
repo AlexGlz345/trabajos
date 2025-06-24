@@ -1,0 +1,17 @@
+.caja, #modeloCaja {
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    padding: 15px;
+    border: 5px solid black;
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    line-height: 100px;
+}
+
+/* Estilo específico para la segunda caja */
+#modeloCaja {
+    background-color: white;
+    border-style: dashed;
+}
