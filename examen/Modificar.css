@@ -1,0 +1,154 @@
+/* Reseteo */
+* {
+    margin: 0; /* Quitar margenes */
+    padding: 0; /* Quitar padding */
+    box-sizing: border-box; /* Tamaño */
+    font-family: 'Times New Roman', Times, serif; /* Tipo de Letra */
+}
+
+/* El Cuerpo */
+body {
+    background-color: #CD0001; /* Rojo */
+    min-height: 100vh; /* Altura de la Pantalla */
+    display: flex; /* centrar */
+    flex-direction: column; /* Apilar Vertical */
+    align-items: center; /* Centrar Horizontal */
+}
+
+/* Encabezado */
+.encabezado {
+    background-color: #e3e3e3; /* Gris Claro */
+    width: 100%; /* Ancho Completo */
+    display: flex; /* Alinear el Logo y Texto */
+    align-items: center; /* Centrar Vertical */
+    padding: 15px 40px; /* Espaciado Interno */
+    border-bottom: 2px solid black; /* Línea Separadora */
+}
+
+.logo {
+    height: 70px; /* Tamaño del Logo */
+    margin-right: 20px; /* Separación Derecha */
+}
+
+.encabezado h1 {
+    font-size: 28px; /* Tamaño Texto */
+    color: black;
+}
+
+/* Cuadro Blanco Formulario */
+.form-container {
+    background-color: white; /* Fondo Blanco */
+    width: 90%; /* Ancho */
+    max-width: 900px; /* Máximo Ancho */
+    margin-top: 50px; /* Margen Arriba */
+    padding: 30px 40px; /* Espaciado Interno */
+    border-radius: 10px; /* Bordes Redondeados */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4); /* Sombra */
+}
+
+/* Titulo Principal */
+.form-container h2 {
+    text-align: center; /* Centrar texto */
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 30px;
+}
+
+/* --- Fila de Nombre y Grado --- */
+.fila {
+    display: flex; /* Poner en fila */
+    gap: 20px; /* Espacio entre columnas */
+    margin-bottom: 20px;
+}
+
+/* Cada columna (Nombre o Grado) */
+.columna {
+    flex: 1; /* Igual ancho */
+    display: flex; /* Flex para apilar label y input */
+    flex-direction: column; /* Vertical */
+}
+
+/* Labels */
+label {
+    font-weight: bold; /* Negrita */
+    margin-bottom: 5px; /* Espacio Debajo */
+}
+
+/* Ocupa el Ancho del Cuadro Blanco */
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%; /* Ocupa todo el Ancho */
+    padding: 8px; /* Espacio Interno */
+    border: 1px solid #000; /* Borde Negro */
+    border-radius: 5px; /* Bordes Redondeados */
+    font-size: 16px;
+}
+
+/* --- Titulo CALIFICAIONES --- */
+.titulo-secundario {
+    text-align: center; /* Centrar Texto */
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0 15px 0; /* Margen */
+    color: black;
+}
+
+/* --- Fila de Calificaciones --- */
+.fila-calif {
+    display: flex; /* En Fila */
+    gap: 20px; /* Espacio entre Columnas */
+    margin-bottom: 25px;
+}
+
+/* Columnas dentro de fila-calif */
+.fila-calif .columna {
+    flex: 1 1 120px; /* Base 120px, puede crecer o encoger */
+    display: flex;
+    flex-direction: column; /* Apila label e input */
+}
+
+/* Texto ajustable */
+.fila-calif label {
+    white-space: normal; /* Permite Salto de Línea en los Label's */
+}
+
+/* --- Boton --- */
+button {
+    width: 100%; /* Botón Ancho */
+    padding: 10px;
+    background-color: #CD0001; /* Rojo */
+    color: white; /* Texto Blanco */
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #A80001; /* Rojo más Oscuro */
+}
+
+/* --- Mensaje para la Configuracion --- */
+.mensaje {
+    margin-top: 15px;
+    color: green;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* --- Enlace para Volver al INDEX --- */
+.regresar {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.regresar:hover {
+    text-decoration: underline;
+}
